@@ -1,37 +1,18 @@
-Tired of losing count of your pressure cooker's whistles? This simple, client-side web app is here to help you keep track of every single one, so you'll know exactly when your meal is ready. No more guesswork, no more soggy rice.
+### Pressure Cooker Counter 🍲
 
-Features
+This is a simple web app that counts the whistles of your pressure cooker.
 
-    Real-time Whistle Detection: Uses your device's microphone to listen for the distinct sound of a pressure cooker whistle.
+### How It Works
 
-    Zero Data Collection: All audio processing happens directly in your browser. No data is stored, saved, or sent to any server, ensuring your privacy.
+The app uses your device's microphone to listen for loud sounds. When it hears a sound that is loud enough, it adds one to the counter. The app does not save any of your audio.
 
-    Simple & Intuitive Interface: A clean design with a large counter and two buttons to start and stop listening.
+### How to Use
 
-    Mobile-Friendly: Designed to work on both desktop and mobile devices.
+1.  Open the `index.html` file in your web browser.
+2.  Click the "Start Listening" button.
+3.  Give the app permission to use your microphone.
+4.  Put your phone or laptop near your pressure cooker. The counter will go up with each whistle.
 
-How to Use
+### Privacy
 
-    Clone this repository or simply download the index.html, style.css, and script.js files.
-
-    Open index.html in a modern web browser like Chrome, Firefox, or Safari.
-
-    Click "Start Listening." Your browser will ask for microphone permission. You must grant this for the app to work.
-
-    Place your device near the pressure cooker.
-
-    Watch the magic happen as the counter increments with each whistle.
-
-Customization
-
-The core logic is in script.js. You can easily adjust the whistleThreshold value to better suit the volume of your specific pressure cooker's whistle. If the counter is too sensitive and picks up background noise, try increasing this value. If it's not detecting whistles, try lowering it.
-JavaScript
-
-// A higher number means the sound has to be louder to be counted as a whistle.
-const whistleThreshold = 100;
-
-A Note on Privacy
-
-This app is designed to be a local tool. The microphone access is used solely for real-time audio analysis within your browser. No audio data ever leaves your device. This ensures that your private conversations and kitchen sounds remain private.
-
-Happy cooking! 🍲
+This app is for you alone. It works completely in your web browser. No audio data is ever saved or sent anywhere.
